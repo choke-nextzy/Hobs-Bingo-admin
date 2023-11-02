@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { User } from '../interfaces/User';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
   const [user, setUser] = useState<User>({
     username: '',
     password: '',
   });
-
   const [rememberMe, setRememberMe] = useState(false);
+  const navigate = useNavigate();
 
   const handleInputChange = (
     event: React.ChangeEvent<HTMLInputElement>,
@@ -29,6 +30,7 @@ function Login() {
     } else {
       sessionStorage.setItem('token', token);
     }
+    navigate('/');
     //TODO LOGIN API
   };
 
