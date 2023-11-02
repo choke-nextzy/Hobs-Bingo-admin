@@ -1,0 +1,29 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .centered-image {
+    max-width: 100%;
+    max-height: 150px;
+    border-radius: 50%;
+    object-fit: contain;
+  }
+
+
+  // Mobile-specific styles using a media query
+  //   @media (max-width: 767px) {
+  //     // Apply styles only for screens with a width of 767px or less (typical mobile devices)
+  //     .some-class {
+  //       color: blue;
+  //       font-size: 14px;
+  //       // Add your mobile-specific styles here
+  //     }
+  //   }
+}

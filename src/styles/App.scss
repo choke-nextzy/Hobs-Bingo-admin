@@ -1,0 +1,38 @@
+/* Common styles that apply to all screen sizes */
+body {
+  font-size: 16px;
+}
+
+/* Mobile-only styles (up to 767px width) */
+@media screen and (max-width: 767px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .header {
+    font-size: 1.5rem;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  /* Other mobile-specific styles here */
+}
+
+/* Tablet and desktop styles (768px and above) */
+@media screen and (min-width: 768px) {
+  body {
+    background-color: white;
+  }
+
+  .header {
+    font-size: 2rem;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  /* Other tablet/desktop-specific styles here */
+}
