@@ -6,7 +6,7 @@ export interface User {
 export interface IUserProfile {
     userId: string;
     displayName: string;
-    statusMessage: string;
+    // statusMessage: string;
     pictureUrl: string;
-    idToken: string;
-  }
+    // idToken: string;
+}
