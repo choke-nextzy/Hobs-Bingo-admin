@@ -1,5 +1,4 @@
 import { useLocation } from "react-router-dom";
-import { IUserProfile } from "../interfaces/User";
 import { useState, useEffect } from "react";
 import "../styles/Profile.scss";
 
@@ -7,7 +6,6 @@ function Profile() {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const scannedData = queryParams.get("data");
-  const [userData, setUserData] = useState<IUserProfile | null>(null);
   const [inputValue, setInputValue] = useState("");
   const [submittedValue, setSubmittedValue] = useState("");
 
