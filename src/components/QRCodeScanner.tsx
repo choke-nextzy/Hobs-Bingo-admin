@@ -9,7 +9,7 @@ const QRCodeScanner: React.FC<IQRCodeScanner> = ({ sendToPath }) => {
   const navigate = useNavigate();
   useEffect(() => {
     if (scannedData != null) {
-      navigate(`/${sendToPath}?data=${scannedData}`);
+      navigate(`${sendToPath}?data=${scannedData}`);
     }
   }, [scannedData]);
 
