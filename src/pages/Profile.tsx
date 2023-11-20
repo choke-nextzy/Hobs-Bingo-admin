@@ -12,14 +12,14 @@ function Profile() {
   const [submittedValue, setSubmittedValue] = useState("");
 
   useEffect(() => {
-    if (scannedData) {
-      try {
-        const parsedData: IUserProfile = JSON.parse(scannedData);
-        setUserData(parsedData);
-      } catch (error) {
-        console.error(`Error parsing JSON: ${error}`);
-      }
-    }
+    // if (scannedData) {
+    //   try {
+    //     const parsedData: IUserProfile = JSON.parse(scannedData);
+    //     setUserData(parsedData);
+    //   } catch (error) {
+    //     console.error(`Error parsing JSON: ${error}`);
+    //   }
+    // }
   }, [scannedData]);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -32,17 +32,16 @@ function Profile() {
 
   return (
     <div>
-      {userData ? (
+      {scannedData ? (
         <div className="profile">
-          <div className="image-container">
+          {/* <div className="image-container">
             <img
               src={userData.pictureUrl}
               alt="User's Profile Picture"
               className="centered-image"
             />
-          </div>
-          <p>UserID: {userData.userId}</p>
-          <p>Display Name: {userData.displayName}</p>
+          </div> */}
+          <p>UserID: {scannedData}</p>
           <input
             type="number"
             value={inputValue}

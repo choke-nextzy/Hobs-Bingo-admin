@@ -13,7 +13,7 @@ function Home() {
 
   return (
     <div>
-      <QRCodeScanner/>
+      <QRCodeScanner sendToPath='/profile'/>
     </div>
   );
 }

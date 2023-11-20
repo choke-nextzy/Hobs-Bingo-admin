@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@yudiel/react-qr-scanner": "^1.2.0",
     "html5-qrcode": "^2.3.8",
-    "qrcode-reader": "^1.0.4",
+    "i": "^0.3.7",
+    "npm": "^10.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-qr-scanner": "^1.0.0-alpha.11",
